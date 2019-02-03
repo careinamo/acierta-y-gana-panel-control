@@ -5,27 +5,25 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // Routes
 import { APP_ROUTES } from './app.routes';
 
+// Modules
+import { PagesModule } from './pages/pages.modules';
+
+
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
-import { DashboardComponent } from './pages/dashboard/dashboard.component';
-import { Graficas1Component } from './pages/graficas1/graficas1.component';
-import { NopagefoundComponent } from './pages/nopagefound/nopagefound.component';
-import { PagesComponent } from './pages/pages.component';
 import { RegisterComponent } from './login/register.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    NopagefoundComponent,
-    DashboardComponent,
-    Graficas1Component,
-    PagesComponent,
     RegisterComponent,
   ],
   imports: [
     BrowserModule,
+    PagesModule,
     APP_ROUTES,
     BrowserAnimationsModule
   ],
